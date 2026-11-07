@@ -8,12 +8,10 @@ A fictional premium Nigerian grill, now set in **Ado-Ekiti, Ekiti State**, follo
 
 ## Student information
 
-Full name: **[MY NAME]**  
-Matric number: **[MATRIC NO]**  
+Full name: **Adesina Gideon Ayodele**  
+Matric number: **202660167091GH**  
 Department: **Computer Science**  
 Course: **COM 105**
-
-Replace the two placeholders before submission. Development used AI assistance and real incremental Git commits; do not describe the work as entirely manually authored.
 
 ## Pages and features
 
