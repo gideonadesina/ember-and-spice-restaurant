@@ -1,0 +1,37 @@
+{
+  "pages": {
+    "index.html": {
+      "errors": [],
+      "images": 8,
+      "localLinks": 31
+    },
+    "about.html": {
+      "errors": [],
+      "images": 2,
+      "localLinks": 17
+    },
+    "services.html": {
+      "errors": [],
+      "images": 6,
+      "localLinks": 24
+    },
+    "contact.html": {
+      "errors": [],
+      "images": 0,
+      "localLinks": 14
+    }
+  },
+  "imageBytes": {
+    "bites.webp": 24518,
+    "chef.webp": 69538,
+    "chicken.webp": 76784,
+    "drink.webp": 47226,
+    "grill.webp": 36750,
+    "hero.webp": 150866,
+    "interior.webp": 102078,
+    "rice.webp": 61544,
+    "soup.webp": 78598,
+    "table.webp": 56452
+  },
+  "note": "Standard-library structural checks; not a W3C conformance certification."
+}

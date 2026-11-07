@@ -1,0 +1,367 @@
+{
+  "base": "https://ember-and-spice-restaurant-sepia.vercel.app",
+  "label": "production",
+  "date": "2026-11-07T16:18:03.360Z",
+  "hostRules": "MAP cdn.jsdelivr.net 104.16.179.112, MAP fonts.googleapis.com 142.250.140.95, MAP fonts.gstatic.com 142.250.140.94, MAP maps.google.com 142.250.140.101, MAP www.google.com 142.250.140.104, MAP ember-and-spice-restaurant-sepia.vercel.app 76.76.21.21",
+  "results": [
+    {
+      "file": "index.html",
+      "width": 360,
+      "scrollWidth": 360,
+      "brokenImages": [
+        "assets/images/grill.webp"
+      ],
+      "h1": 1,
+      "title": "Home | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "block"
+      }
+    },
+    {
+      "file": "about.html",
+      "width": 360,
+      "scrollWidth": 360,
+      "brokenImages": [],
+      "h1": 1,
+      "title": "Our story | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "block"
+      }
+    },
+    {
+      "file": "services.html",
+      "width": 360,
+      "scrollWidth": 360,
+      "brokenImages": [],
+      "h1": 1,
+      "title": "The menu | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "grid"
+      }
+    },
+    {
+      "file": "contact.html",
+      "width": 360,
+      "scrollWidth": 360,
+      "brokenImages": [],
+      "h1": 1,
+      "title": "Visit us | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "block"
+      }
+    },
+    {
+      "file": "index.html",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "h1": 1,
+      "title": "Home | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "block"
+      }
+    },
+    {
+      "file": "about.html",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "h1": 1,
+      "title": "Our story | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "block"
+      }
+    },
+    {
+      "file": "services.html",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "h1": 1,
+      "title": "The menu | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "grid"
+      }
+    },
+    {
+      "file": "contact.html",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "h1": 1,
+      "title": "Visit us | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "block"
+      }
+    },
+    {
+      "file": "index.html",
+      "width": 768,
+      "scrollWidth": 768,
+      "brokenImages": [],
+      "h1": 1,
+      "title": "Home | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "block"
+      }
+    },
+    {
+      "file": "about.html",
+      "width": 768,
+      "scrollWidth": 768,
+      "brokenImages": [],
+      "h1": 1,
+      "title": "Our story | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "block"
+      }
+    },
+    {
+      "file": "services.html",
+      "width": 768,
+      "scrollWidth": 768,
+      "brokenImages": [],
+      "h1": 1,
+      "title": "The menu | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "grid"
+      }
+    },
+    {
+      "file": "contact.html",
+      "width": 768,
+      "scrollWidth": 768,
+      "brokenImages": [],
+      "h1": 1,
+      "title": "Visit us | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "block"
+      }
+    },
+    {
+      "file": "index.html",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "brokenImages": [],
+      "h1": 1,
+      "title": "Home | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "block"
+      }
+    },
+    {
+      "file": "about.html",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "brokenImages": [],
+      "h1": 1,
+      "title": "Our story | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "block"
+      }
+    },
+    {
+      "file": "services.html",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "brokenImages": [],
+      "h1": 1,
+      "title": "The menu | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "grid"
+      }
+    },
+    {
+      "file": "contact.html",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "brokenImages": [],
+      "h1": 1,
+      "title": "Visit us | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "block"
+      }
+    },
+    {
+      "file": "index.html",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "h1": 1,
+      "title": "Home | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "block"
+      }
+    },
+    {
+      "file": "about.html",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "h1": 1,
+      "title": "Our story | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "block"
+      }
+    },
+    {
+      "file": "services.html",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "h1": 1,
+      "title": "The menu | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "grid"
+      }
+    },
+    {
+      "file": "contact.html",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "h1": 1,
+      "title": "Visit us | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "block"
+      }
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "failedRequests": [
+    {
+      "url": "https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1sAdo-Ekiti,+Nigeria!6i12",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1sAdo-Ekiti,+Nigeria!6i12",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://maps.google.com/maps?q=Ado-Ekiti%2C%20Nigeria&t=&z=12&ie=UTF8&iwloc=&output=embed",
+      "error": "net::ERR_ABORTED"
+    }
+  ],
+  "httpErrors": []
+}

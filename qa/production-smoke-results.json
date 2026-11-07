@@ -1,0 +1,33 @@
+{
+  "base": "https://ember-and-spice-restaurant-sepia.vercel.app",
+  "label": "production",
+  "unauthenticatedContext": true,
+  "pageStatus": [
+    {
+      "file": "index.html",
+      "status": 200
+    },
+    {
+      "file": "about.html",
+      "status": 200
+    },
+    {
+      "file": "services.html",
+      "status": 200
+    },
+    {
+      "file": "contact.html",
+      "status": 200
+    }
+  ],
+  "assetsChecked": 13,
+  "map": {
+    "src": "https://maps.google.com/maps?q=Ado-Ekiti%2C%20Nigeria&t=&z=12&ie=UTF8&iwloc=&output=embed",
+    "bodyVisible": true,
+    "text": ""
+  },
+  "normalMotionRevealOpacity": "1",
+  "lightButtonContrast": 7.12,
+  "blockedStorageThemePassed": true,
+  "errors": []
+}

@@ -1,0 +1,80 @@
+{
+  "base": "https://ember-and-spice-restaurant-sepia.vercel.app",
+  "label": "production-recheck-360",
+  "date": "2026-11-07T16:19:39.664Z",
+  "hostRules": "MAP cdn.jsdelivr.net 104.16.179.112, MAP fonts.googleapis.com 142.250.140.95, MAP fonts.gstatic.com 142.250.140.94, MAP maps.google.com 142.250.140.101, MAP www.google.com 142.250.140.104, MAP ember-and-spice-restaurant-sepia.vercel.app 76.76.21.21",
+  "results": [
+    {
+      "file": "index.html",
+      "width": 360,
+      "scrollWidth": 360,
+      "brokenImages": [],
+      "h1": 1,
+      "title": "Home | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "block"
+      }
+    },
+    {
+      "file": "about.html",
+      "width": 360,
+      "scrollWidth": 360,
+      "brokenImages": [],
+      "h1": 1,
+      "title": "Our story | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "block"
+      }
+    },
+    {
+      "file": "services.html",
+      "width": 360,
+      "scrollWidth": 360,
+      "brokenImages": [],
+      "h1": 1,
+      "title": "The menu | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "grid"
+      }
+    },
+    {
+      "file": "contact.html",
+      "width": 360,
+      "scrollWidth": 360,
+      "brokenImages": [],
+      "h1": 1,
+      "title": "Visit us | Ember & Spice — Modern Nigerian Grill",
+      "navLinks": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "contact.html"
+      ],
+      "layout": {
+        "menu": "block"
+      }
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "httpErrors": []
+}

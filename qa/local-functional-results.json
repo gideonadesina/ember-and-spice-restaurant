@@ -1,0 +1,21 @@
+{
+  "base": "http://127.0.0.1:4173",
+  "label": "local",
+  "passed": [
+    "Empty form: four inline errors and first invalid field focused",
+    "Blur validation and name, subject, message minimum lengths",
+    "Malformed email rejected",
+    "Character counter updates live",
+    "Valid submit: honest demo message, reset and no outgoing form request",
+    "Subject prefill from catering link",
+    "Mobile navigation, Escape and navigation link",
+    "All five category filters return the expected dishes",
+    "Theme persists across pages",
+    "Testimonial next and previous controls",
+    "Opening badge has a calculated WAT status",
+    "Back-to-top control",
+    "Pinned CDN libraries are loaded",
+    "Reduced motion skips GSAP reveal and Lenis animation"
+  ],
+  "errors": []
+}
