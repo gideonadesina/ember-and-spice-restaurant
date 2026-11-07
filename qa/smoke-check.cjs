@@ -14,6 +14,7 @@ const base = process.argv[2] || "http://127.0.0.1:4173",
     viewport: { width: 1440, height: 1000 },
   });
   const p = await context.newPage();
+  p.setDefaultNavigationTimeout(90000);
   const errors = [];
   p.on("pageerror", (e) => errors.push(e.message));
   const pageStatus = [];

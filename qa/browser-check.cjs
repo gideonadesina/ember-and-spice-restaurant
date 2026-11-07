@@ -16,7 +16,8 @@ const label = process.argv[3] || "local";
   const consoleErrors = [];
   const failedRequests = [];
   const httpErrors = [];
-  for (const width of [360, 390, 768, 1024, 1440]) {
+  const widths = process.env.QA_WIDTHS ? process.env.QA_WIDTHS.split(',').map(Number) : [360, 390, 768, 1024, 1440];
+  for (const width of widths) {
     const context = await browser.newContext({
       viewport: { width, height: 1000 },
       reducedMotion: "reduce",
