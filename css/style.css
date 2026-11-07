@@ -6,6 +6,8 @@
   --text: #f4efe4;
   --muted: #bbbbae;
   --accent: #e9ac83;
+  --button-text: #201d18;
+  --button-hover: #f2c3a3;
   --gold: #d4bf80;
   --line: #ffffff24;
   --serif: "Playfair Display", Georgia, serif;
@@ -21,6 +23,8 @@
   --text: #272d22;
   --muted: #59614f;
   --accent: #8d3d19;
+  --button-text: #fff9ef;
+  --button-hover: #73300f;
   --gold: #6e5a22;
   --line: #272d2230;
   color-scheme: light;
@@ -147,7 +151,7 @@ h2 + p {
   padding: 14px 24px;
   border: 1px solid var(--accent);
   background: var(--accent);
-  color: #201d18;
+  color: var(--button-text);
   font-size: 0.8rem;
   font-weight: 600;
   border-radius: 3px;
@@ -156,7 +160,7 @@ h2 + p {
     transform 0.2s;
 }
 .button:hover {
-  background: #f2c3a3;
+  background: var(--button-hover);
   transform: translateY(-2px);
 }
 .button-outline {
@@ -196,7 +200,7 @@ h2 + p {
   left: 12px;
   top: -80px;
   background: var(--accent);
-  color: #171916;
+  color: var(--button-text);
   padding: 12px;
   z-index: 100;
 }
@@ -849,7 +853,7 @@ blockquote {
 .filter-button.is-active {
   background: var(--accent);
   border-color: var(--accent);
-  color: #201d18;
+  color: var(--button-text);
 }
 .menu-toolbar > p {
   font-size: 0.65rem;
