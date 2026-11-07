@@ -67,10 +67,10 @@ Ignored `.tools/` helpers are development tooling, not website code. Credentials
 Open `index.html` directly. A static server gives more consistent storage behaviour:
 
 ```sh
-python -m http.server 4173
+node qa/serve.cjs
 ```
 
-Visit `http://localhost:4173`. Any static HTTP server works. The website needs no package installation or build.
+Visit `http://127.0.0.1:4173`. The included server uses Node.js, which is already available in this workspace, and no packages. Any static HTTP server also works. The website needs no package installation or build.
 
 For optional development QA, use an existing Playwright installation or install it separately. Set `PLAYWRIGHT_MODULE` to its module path if needed:
 
