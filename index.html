@@ -1,74 +1,407 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Modern Nigerian grill in Jos. Fire, flavour and a little Plateau soul.">
-  <meta name="theme-color" content="#171916">
-  <meta property="og:title" content="Home | Ember & Spice">
-  <meta property="og:description" content="Modern Nigerian grill in Jos. Fire, flavour and a little Plateau soul.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/images/hero.webp">
-  <title>Home | Ember & Spice — Jos</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js" defer></script>
-  <script src="js/main.js" defer></script>
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="nav-wrap container">
-      <a class="brand" href="index.html" aria-label="Ember and Spice home"><span class="brand-mark" aria-hidden="true">✳</span><span>ember<span class="brand-amp"> & </span>spice<small>JOS · MODERN NIGERIAN GRILL</small></span></a>
-      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="about.html">Our story</a>
-        <a href="services.html">The menu</a>
-        <a href="contact.html">Visit us</a>
-      </nav>
-      <div class="nav-actions"><button class="theme-toggle icon-button" type="button" aria-label="Switch to light theme"><i class="ph ph-sun" aria-hidden="true"></i><span class="theme-symbol" aria-hidden="true">☼</span></button><a class="button button-small nav-book" href="contact.html#enquiry">A seat at our table <span aria-hidden="true">↗</span></a><button class="menu-toggle icon-button" aria-controls="main-nav" aria-expanded="false" type="button" aria-label="Open navigation"><span></span><span></span></button></div>
-    </div>
-  </header>
-  <main id="main">
-    <!-- ===== HERO (Flexbox) ===== -->
-    <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-photo" src="assets/images/hero.webp" alt="Flame-grilled meat served on a rustic board with herbs and vegetables" width="1600" height="1067" fetchpriority="high">
-      <div class="hero-shade"></div>
-      <div class="container hero-inner">
-        <div class="hero-copy"><p class="eyebrow">BORN IN JOS. FIRED WITH SOUL.</p><h1 id="hero-title">Good food.<br>Great company.<br><em>A little fire.</em></h1><p class="hero-description">The flavours you grew up with.<br>A fresh spark you didn’t see coming.</p><div class="hero-actions"><a class="button" href="services.html">Explore the menu <span aria-hidden="true">↗</span></a><a class="button button-glass" href="contact.html#enquiry">Book a table <span aria-hidden="true">↗</span></a></div></div>
-        <div class="hero-seal" aria-label="Modern Nigerian grill, made with soul"><span>MODERN NIGERIAN</span><b aria-hidden="true">✳</b><span>MADE WITH SOUL</span></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Modern Nigerian grill in Jos. Fire, flavour and a little Plateau soul."
+    />
+    <meta name="theme-color" content="#171916" />
+    <meta property="og:title" content="Home | Ember & Spice" />
+    <meta
+      property="og:description"
+      content="Modern Nigerian grill in Jos. Fire, flavour and a little Plateau soul."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/hero.webp" />
+    <title>Home | Ember & Spice — Jos</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"
+      defer
+    ></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="nav-wrap container">
+        <a class="brand" href="index.html" aria-label="Ember and Spice home"
+          ><span class="brand-mark" aria-hidden="true">✳</span
+          ><span
+            >ember<span class="brand-amp"> & </span>spice<small
+              >JOS · MODERN NIGERIAN GRILL</small
+            ></span
+          ></a
+        >
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="about.html">Our story</a>
+          <a href="services.html">The menu</a>
+          <a href="contact.html">Visit us</a>
+        </nav>
+        <div class="nav-actions">
+          <button
+            class="theme-toggle icon-button"
+            type="button"
+            aria-label="Switch to light theme"
+          >
+            <i class="ph ph-sun" aria-hidden="true"></i
+            ><span class="theme-symbol" aria-hidden="true">☼</span></button
+          ><a class="button button-small nav-book" href="contact.html#enquiry"
+            >A seat at our table <span aria-hidden="true">↗</span></a
+          ><button
+            class="menu-toggle icon-button"
+            aria-controls="main-nav"
+            aria-expanded="false"
+            type="button"
+            aria-label="Open navigation"
+          >
+            <span></span><span></span>
+          </button>
+        </div>
       </div>
-      <div class="hero-bottom container"><span>9.8965° N &nbsp; 8.8583° E &nbsp; / &nbsp; JOS, NIGERIA</span><a href="#welcome">A TASTE OF WHAT’S TO COME <span aria-hidden="true">↓</span></a></div>
-    </section>
-    <div class="flavour-strip" aria-label="Our food philosophy"><span>FIRE-KISSED GRILLS</span><b>✳</b><span>BOLD NIGERIAN FLAVOURS</span><b>✳</b><span>PLATEAU HOSPITALITY</span><b>✳</b><span>ALWAYS GOOD COMPANY</span></div>
-    <!-- ===== WELCOME ===== -->
-    <section class="container section story-split" id="welcome">
-      <div class="story-visual reveal"><img src="assets/images/interior.webp" alt="Warm restaurant interior with hanging plants, wooden tables and amber lights" width="1200" height="800" loading="lazy"><span class="image-note">A little warmth. A lot of soul.</span></div>
-      <div class="story-copy reveal"><p class="eyebrow">PULL UP A CHAIR</p><h2>Rooted in flavour.<br><em class="serif-italic">Made for together.</em></h2><p>Welcome to Ember & Spice, a modern Nigerian grill imagined in the cool heart of Jos. We bring familiar favourites to the fire, and people a little closer to the table.</p><p>Think smoky suya, proper party jollof and a chilled glass of something bright. Come as you are. Leave a little happier.</p><a class="text-link" href="about.html">The story behind the spark <span aria-hidden="true">↗</span></a></div>
-    </section>
-    <!-- ===== SIGNATURE DISHES (CSS Grid) ===== -->
-    <section class="signature-section section"><div class="container"><div class="section-heading reveal"><div><p class="eyebrow">FROM OUR FIRE TO YOUR TABLE</p><h2>A few house <em class="serif-italic">favourites.</em></h2></div><a class="text-link" href="services.html">View the whole menu <span aria-hidden="true">↗</span></a></div><div class="signature-grid">
-      <article class="food-card reveal"><a class="image-link" href="services.html#menu"><img src="assets/images/grill.webp" alt="Chargrilled beef steak with rosemary, an illustration of our grill selection" width="900" height="600" loading="lazy"><span class="image-badge">FROM THE GRILL</span></a><div class="dish-title"><h3>Signature suya</h3><span>₦6,500</span></div><p>Fire, yaji spice and that irresistible smoky finish.</p></article>
-      <article class="food-card reveal"><a class="image-link" href="services.html#menu"><img src="assets/images/rice.webp" alt="A colourful seasoned rice dish, illustrating our rice selection" width="900" height="600" loading="lazy"><span class="image-badge">A NIGERIAN CLASSIC</span></a><div class="dish-title"><h3>Smoky party jollof</h3><span>₦5,000</span></div><p>Slow-cooked tomatoes. A little heat. Pure comfort.</p></article>
-      <article class="food-card reveal"><a class="image-link" href="services.html#menu"><img src="assets/images/drink.webp" alt="A refreshing citrus mocktail garnished with fresh fruit" width="900" height="1200" loading="lazy"><span class="image-badge">SIP SOMETHING BRIGHT</span></a><div class="dish-title"><h3>Hibiscus sunset</h3><span>₦2,500</span></div><p>Our zobo-inspired cooler, with citrus and ginger.</p></article>
-    </div><p class="image-disclaimer">Illustrative food photography · Sample menu and prices</p></div></section>
-    <!-- ===== GALLERY (CSS Grid) ===== -->
-    <section class="container section"><div class="section-heading reveal"><div><p class="eyebrow">THE EMBER FEELING</p><h2>Stay for <em class="serif-italic">a while.</em></h2></div><p>Slow evenings. Full plates.<br>The kind of moments worth sharing.</p></div><div class="gallery-grid"><figure class="reveal"><img src="assets/images/table.webp" alt="An elegantly laid restaurant table ready for an evening meal" width="1100" height="733" loading="lazy"><figcaption>A table for your favourite people</figcaption></figure><figure class="reveal"><img src="assets/images/chicken.webp" alt="Roasted chicken with a rich golden glaze and herbs" width="900" height="600" loading="lazy"><figcaption>Something worth gathering around</figcaption></figure><figure class="reveal"><img src="assets/images/interior.webp" alt="An inviting restaurant dining space filled with plants and warm light" width="1200" height="800" loading="lazy"><figcaption>Your evening, a little warmer</figcaption></figure></div></section>
-    <!-- ===== TESTIMONIALS (Swiper enhancement) ===== -->
-    <section class="quote-section section"><div class="container quote-wrap"><p class="eyebrow">AROUND THE TABLE</p><p class="demo-label">Illustrative guest quotes for this fictional restaurant</p><div class="swiper testimonial-slider" aria-label="Sample guest quotes" aria-roledescription="carousel"><div class="swiper-wrapper"><figure class="swiper-slide"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“The kind of food that makes the whole table go quiet. Then everyone asks for more.”</blockquote><figcaption>THE FRIDAY-NIGHT REGULAR <span>· Sample guest</span></figcaption></figure><figure class="swiper-slide"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“A little smoke, a little spice, and an evening we didn’t want to end.”</blockquote><figcaption>THE LONG-LUNCH LOVER <span>· Sample guest</span></figcaption></figure><figure class="swiper-slide"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“Familiar flavours, a fresh point of view. This is what coming together should taste like.”</blockquote><figcaption>THE FIRST-TIME VISITOR <span>· Sample guest</span></figcaption></figure></div></div><div class="quote-controls"><button class="quote-prev icon-button" type="button" aria-label="Previous guest quote">←</button><span class="quote-count" aria-live="polite">1 / 3</span><button class="quote-next icon-button" type="button" aria-label="Next guest quote">→</button></div></div></section>
-    <section class="container invitation section reveal"><p class="eyebrow">THERE’S ALWAYS ROOM</p><h2>Your next good evening<br>starts <em class="serif-italic">right here.</em></h2><p>Bring your appetite. We’ll bring the warmth.</p><a class="button" href="contact.html#enquiry">Let’s make a plan <span aria-hidden="true">↗</span></a></section></main>
-  <footer class="site-footer">
-    <div class="container footer-top"><div><a class="brand footer-brand" href="index.html">ember & spice<span aria-hidden="true">✳</span></a><p>Nigerian roots. An open flame.<br>A table with your name on it.</p></div><div><h2>Find your way</h2><a href="about.html">Our story</a><a href="services.html">The menu</a><a href="contact.html">Visit & enquiries</a></div><div><h2>Come hungry</h2><p>Tuesday – Sunday · 12 noon – 10 pm<br>Monday · Taking a little breather</p><p>Jos, Plateau State, Nigeria<br><span class="opening-status">Checking opening hours…</span></p></div></div>
-    <div class="container footer-bottom"><p>© <span class="current-year">2026</span> Ember & Spice · A fictional restaurant, made for COM 105.</p><p>Sample contact details, prices & guest quotes for demonstration.</p></div>
-  </footer>
-  <button class="back-top icon-button" aria-label="Back to top" type="button" hidden>↑</button>
-</body>
+    </header>
+    <main id="main">
+      <!-- ===== HERO (Flexbox) ===== -->
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-photo"
+          src="assets/images/hero.webp"
+          alt="Flame-grilled meat served on a rustic board with herbs and vegetables"
+          width="1600"
+          height="1067"
+          fetchpriority="high"
+        />
+        <div class="hero-shade"></div>
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">BORN IN JOS. FIRED WITH SOUL.</p>
+            <h1 id="hero-title">
+              Good food.<br />Great company.<br /><em>A little fire.</em>
+            </h1>
+            <p class="hero-description">
+              The flavours you grew up with.<br />A fresh spark you didn’t see
+              coming.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="services.html"
+                >Explore the menu <span aria-hidden="true">↗</span></a
+              ><a class="button button-glass" href="contact.html#enquiry"
+                >Book a table <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </div>
+          <div
+            class="hero-seal"
+            aria-label="Modern Nigerian grill, made with soul"
+          >
+            <span>MODERN NIGERIAN</span><b aria-hidden="true">✳</b
+            ><span>MADE WITH SOUL</span>
+          </div>
+        </div>
+        <div class="hero-bottom container">
+          <span>9.8965° N &nbsp; 8.8583° E &nbsp; / &nbsp; JOS, NIGERIA</span
+          ><a href="#welcome"
+            >A TASTE OF WHAT’S TO COME <span aria-hidden="true">↓</span></a
+          >
+        </div>
+      </section>
+      <div class="flavour-strip" aria-label="Our food philosophy">
+        <span>FIRE-KISSED GRILLS</span><b>✳</b
+        ><span>BOLD NIGERIAN FLAVOURS</span><b>✳</b
+        ><span>PLATEAU HOSPITALITY</span><b>✳</b
+        ><span>ALWAYS GOOD COMPANY</span>
+      </div>
+      <!-- ===== WELCOME ===== -->
+      <section class="container section story-split" id="welcome">
+        <div class="story-visual reveal">
+          <img
+            src="assets/images/interior.webp"
+            alt="Warm restaurant interior with hanging plants, wooden tables and amber lights"
+            width="1200"
+            height="800"
+            loading="lazy"
+          /><span class="image-note">A little warmth. A lot of soul.</span>
+        </div>
+        <div class="story-copy reveal">
+          <p class="eyebrow">PULL UP A CHAIR</p>
+          <h2>
+            Rooted in flavour.<br /><em class="serif-italic"
+              >Made for together.</em
+            >
+          </h2>
+          <p>
+            Welcome to Ember & Spice, a modern Nigerian grill imagined in the
+            cool heart of Jos. We bring familiar favourites to the fire, and
+            people a little closer to the table.
+          </p>
+          <p>
+            Think smoky suya, proper party jollof and a chilled glass of
+            something bright. Come as you are. Leave a little happier.
+          </p>
+          <a class="text-link" href="about.html"
+            >The story behind the spark <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+      <!-- ===== SIGNATURE DISHES (CSS Grid) ===== -->
+      <section class="signature-section section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">FROM OUR FIRE TO YOUR TABLE</p>
+              <h2>A few house <em class="serif-italic">favourites.</em></h2>
+            </div>
+            <a class="text-link" href="services.html"
+              >View the whole menu <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="signature-grid">
+            <article class="food-card reveal">
+              <a class="image-link" href="services.html#menu"
+                ><img
+                  src="assets/images/grill.webp"
+                  alt="Chargrilled beef steak with rosemary, an illustration of our grill selection"
+                  width="900"
+                  height="600"
+                  loading="lazy"
+                /><span class="image-badge">FROM THE GRILL</span></a
+              >
+              <div class="dish-title">
+                <h3>Signature suya</h3>
+                <span>₦6,500</span>
+              </div>
+              <p>Fire, yaji spice and that irresistible smoky finish.</p>
+            </article>
+            <article class="food-card reveal">
+              <a class="image-link" href="services.html#menu"
+                ><img
+                  src="assets/images/rice.webp"
+                  alt="A colourful seasoned rice dish, illustrating our rice selection"
+                  width="900"
+                  height="600"
+                  loading="lazy"
+                /><span class="image-badge">A NIGERIAN CLASSIC</span></a
+              >
+              <div class="dish-title">
+                <h3>Smoky party jollof</h3>
+                <span>₦5,000</span>
+              </div>
+              <p>Slow-cooked tomatoes. A little heat. Pure comfort.</p>
+            </article>
+            <article class="food-card reveal">
+              <a class="image-link" href="services.html#menu"
+                ><img
+                  src="assets/images/drink.webp"
+                  alt="A refreshing citrus mocktail garnished with fresh fruit"
+                  width="900"
+                  height="1200"
+                  loading="lazy"
+                /><span class="image-badge">SIP SOMETHING BRIGHT</span></a
+              >
+              <div class="dish-title">
+                <h3>Hibiscus sunset</h3>
+                <span>₦2,500</span>
+              </div>
+              <p>Our zobo-inspired cooler, with citrus and ginger.</p>
+            </article>
+          </div>
+          <p class="image-disclaimer">
+            Illustrative food photography · Sample menu and prices
+          </p>
+        </div>
+      </section>
+      <!-- ===== GALLERY (CSS Grid) ===== -->
+      <section class="container section">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">THE EMBER FEELING</p>
+            <h2>Stay for <em class="serif-italic">a while.</em></h2>
+          </div>
+          <p>
+            Slow evenings. Full plates.<br />The kind of moments worth sharing.
+          </p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="reveal">
+            <img
+              src="assets/images/table.webp"
+              alt="An elegantly laid restaurant table ready for an evening meal"
+              width="1100"
+              height="733"
+              loading="lazy"
+            />
+            <figcaption>A table for your favourite people</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img
+              src="assets/images/chicken.webp"
+              alt="Roasted chicken with a rich golden glaze and herbs"
+              width="900"
+              height="600"
+              loading="lazy"
+            />
+            <figcaption>Something worth gathering around</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img
+              src="assets/images/interior.webp"
+              alt="An inviting restaurant dining space filled with plants and warm light"
+              width="1200"
+              height="800"
+              loading="lazy"
+            />
+            <figcaption>Your evening, a little warmer</figcaption>
+          </figure>
+        </div>
+      </section>
+      <!-- ===== TESTIMONIALS (Swiper enhancement) ===== -->
+      <section class="quote-section section">
+        <div class="container quote-wrap">
+          <p class="eyebrow">AROUND THE TABLE</p>
+          <p class="demo-label">
+            Illustrative guest quotes for this fictional restaurant
+          </p>
+          <div
+            class="swiper testimonial-slider"
+            aria-label="Sample guest quotes"
+            aria-roledescription="carousel"
+          >
+            <div class="swiper-wrapper">
+              <figure class="swiper-slide">
+                <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <blockquote>
+                  “The kind of food that makes the whole table go quiet. Then
+                  everyone asks for more.”
+                </blockquote>
+                <figcaption>
+                  THE FRIDAY-NIGHT REGULAR <span>· Sample guest</span>
+                </figcaption>
+              </figure>
+              <figure class="swiper-slide">
+                <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <blockquote>
+                  “A little smoke, a little spice, and an evening we didn’t want
+                  to end.”
+                </blockquote>
+                <figcaption>
+                  THE LONG-LUNCH LOVER <span>· Sample guest</span>
+                </figcaption>
+              </figure>
+              <figure class="swiper-slide">
+                <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <blockquote>
+                  “Familiar flavours, a fresh point of view. This is what coming
+                  together should taste like.”
+                </blockquote>
+                <figcaption>
+                  THE FIRST-TIME VISITOR <span>· Sample guest</span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="quote-controls">
+            <button
+              class="quote-prev icon-button"
+              type="button"
+              aria-label="Previous guest quote"
+            >
+              ←</button
+            ><span class="quote-count" aria-live="polite">1 / 3</span
+            ><button
+              class="quote-next icon-button"
+              type="button"
+              aria-label="Next guest quote"
+            >
+              →
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="container invitation section reveal">
+        <p class="eyebrow">THERE’S ALWAYS ROOM</p>
+        <h2>
+          Your next good evening<br />starts
+          <em class="serif-italic">right here.</em>
+        </h2>
+        <p>Bring your appetite. We’ll bring the warmth.</p>
+        <a class="button" href="contact.html#enquiry"
+          >Let’s make a plan <span aria-hidden="true">↗</span></a
+        >
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <div>
+          <a class="brand footer-brand" href="index.html"
+            >ember & spice<span aria-hidden="true">✳</span></a
+          >
+          <p>
+            Nigerian roots. An open flame.<br />A table with your name on it.
+          </p>
+        </div>
+        <div>
+          <h2>Find your way</h2>
+          <a href="about.html">Our story</a><a href="services.html">The menu</a
+          ><a href="contact.html">Visit & enquiries</a>
+        </div>
+        <div>
+          <h2>Come hungry</h2>
+          <p>
+            Tuesday – Sunday · 12 noon – 10 pm<br />Monday · Taking a little
+            breather
+          </p>
+          <p>
+            Jos, Plateau State, Nigeria<br /><span class="opening-status"
+              >Checking opening hours…</span
+            >
+          </p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>
+          © <span class="current-year">2026</span> Ember & Spice · A fictional
+          restaurant, made for COM 105.
+        </p>
+        <p>Sample contact details, prices & guest quotes for demonstration.</p>
+      </div>
+    </footer>
+    <button
+      class="back-top icon-button"
+      aria-label="Back to top"
+      type="button"
+      hidden
+    >
+      ↑
+    </button>
+  </body>
 </html>

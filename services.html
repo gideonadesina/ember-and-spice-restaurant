@@ -1,61 +1,419 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore fire-kissed grills, smoky jollof, comforting soups and refreshing mocktails.">
-  <meta name="theme-color" content="#171916">
-  <meta property="og:title" content="The menu | Ember & Spice">
-  <meta property="og:description" content="Explore fire-kissed grills, smoky jollof, comforting soups and refreshing mocktails.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/images/hero.webp">
-  <title>The menu | Ember & Spice — Jos</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js" defer></script>
-  <script src="js/main.js" defer></script>
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="nav-wrap container">
-      <a class="brand" href="index.html" aria-label="Ember and Spice home"><span class="brand-mark" aria-hidden="true">✳</span><span>ember<span class="brand-amp"> & </span>spice<small>JOS · MODERN NIGERIAN GRILL</small></span></a>
-      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">Our story</a>
-        <a href="services.html" aria-current="page">The menu</a>
-        <a href="contact.html">Visit us</a>
-      </nav>
-      <div class="nav-actions"><button class="theme-toggle icon-button" type="button" aria-label="Switch to light theme"><i class="ph ph-sun" aria-hidden="true"></i><span class="theme-symbol" aria-hidden="true">☼</span></button><a class="button button-small nav-book" href="contact.html#enquiry">A seat at our table <span aria-hidden="true">↗</span></a><button class="menu-toggle icon-button" aria-controls="main-nav" aria-expanded="false" type="button" aria-label="Open navigation"><span></span><span></span></button></div>
-    </div>
-  </header>
-  <main id="main">
-    <section class="container page-intro"><div><p class="eyebrow">THE MENU · MADE WITH INTENTION</p><h1>Big flavour.<br><em class="serif-italic">No small talk.</em></h1></div><p>From the first bite to the last sip.<br>Nigerian favourites with our own little spark.</p></section>
-    <section class="container menu-section" id="menu" aria-labelledby="menu-heading"><div class="menu-toolbar"><h2 id="menu-heading" class="visually-hidden">Our food and drinks</h2><div class="menu-filters" role="group" aria-label="Filter menu by category"><button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All dishes <span>06</span></button><button class="filter-button" type="button" data-filter="grills" aria-pressed="false">Grills & bites</button><button class="filter-button" type="button" data-filter="rice" aria-pressed="false">Rice</button><button class="filter-button" type="button" data-filter="soups" aria-pressed="false">Soups</button><button class="filter-button" type="button" data-filter="drinks" aria-pressed="false">Drinks</button></div><p id="filter-result" role="status" aria-live="polite">6 dishes to discover</p></div>
-      <!-- Handwritten CSS Grid; category filtering is vanilla JavaScript. -->
-      <div class="menu-grid"><article class="food-card menu-card" data-category="grills"><div class="image-link"><img src="assets/images/grill.webp" alt="Chargrilled beef with rosemary, illustrative of our suya selection" width="900" height="600" loading="lazy"><span class="image-badge">HOUSE SIGNATURE</span></div><div class="dish-title"><h3>Signature beef suya</h3><span>₦6,500</span></div><p>Tender grilled beef, toasted groundnut yaji, sliced onion and fresh tomato. A little heat, a lot of soul.</p><span class="diet-note">Groundnuts</span></article>
-        <article class="food-card menu-card" data-category="rice"><div class="image-link"><img src="assets/images/rice.webp" alt="Colourful seasoned rice, illustrative of our jollof selection" width="900" height="600" loading="lazy"><span class="image-badge">COMFORT, DONE PROPERLY</span></div><div class="dish-title"><h3>Smoky party jollof</h3><span>₦5,000</span></div><p>Tomato-rich rice with a gentle smoky finish, sweet fried plantain and a bright house slaw.</p><span class="diet-note">Vegetarian option</span></article>
-        <article class="food-card menu-card" data-category="grills"><div class="image-link"><img src="assets/images/chicken.webp" alt="Golden glazed chicken garnished with herbs" width="900" height="600" loading="lazy"><span class="image-badge">STRAIGHT FROM THE FIRE</span></div><div class="dish-title"><h3>Pepper-glazed chicken</h3><span>₦7,500</span></div><p>Flame-finished chicken with our bold pepper glaze, grilled vegetables and a squeeze of lime.</p><span class="diet-note">Medium heat</span></article>
-        <article class="food-card menu-card" data-category="soups"><div class="image-link"><img src="assets/images/soup.webp" alt="A hearty herb-garnished soup, illustrative of our pepper soup" width="900" height="600" loading="lazy"><span class="image-badge">A WARM EMBRACE</span></div><div class="dish-title"><h3>Jos pepper soup</h3><span>₦5,500</span></div><p>A fragrant, warming broth with goat meat, aromatic Nigerian spices and fresh herbs.</p><span class="diet-note">Spicy</span></article>
-        <article class="food-card menu-card" data-category="grills"><div class="image-link"><img src="assets/images/bites.webp" alt="A colourful small-plate selection, illustrative of our sharing platter" width="900" height="600" loading="lazy"><span class="image-badge">BETTER WHEN SHARED</span></div><div class="dish-title"><h3>Small chops platter</h3><span>₦4,500</span></div><p>A playful mix of puff-puff, spring rolls and samosas, served with a lively pepper dip.</p><span class="diet-note">Wheat · Vegetarian option</span></article>
-        <article class="food-card menu-card" data-category="drinks"><div class="image-link"><img src="assets/images/drink.webp" alt="A fresh citrus mocktail served in a tall glass with fruit" width="900" height="600" loading="lazy"><span class="image-badge">A LITTLE SUNSHINE</span></div><div class="dish-title"><h3>Hibiscus sunset</h3><span>₦2,500</span></div><p>A chilled zobo-inspired mocktail with hibiscus, fresh citrus, a touch of ginger and zero alcohol.</p><span class="diet-note">Alcohol-free</span></article></div>
-      <aside class="menu-note"><span aria-hidden="true">✳</span><div><h3>A little note from the kitchen</h3><p>All dishes, prices and photos are illustrative. Tell us about any allergies when making an enquiry; the demo form does not place an order or reserve a table.</p></div></aside>
-    </section>
-    <!-- ===== CATERING & EVENTS (Flexbox) ===== -->
-    <section class="services-section section"><div class="container"><div class="section-heading"><div><p class="eyebrow">BEYOND THE EVERYDAY</p><h2>Your occasion.<br><em class="serif-italic">Our kind of flavour.</em></h2></div><p>Some moments call for a bigger table.<br>Let’s imagine something special.</p></div><div class="services-flex"><article class="service-card reveal"><span class="service-icon" aria-hidden="true">01 / <i class="ph ph-bowl-food"></i></span><h3>Catering, with soul</h3><p>Bring the Ember & Spice spirit to your celebration. A considered spread of grills, rice and sharing plates, made for your guest list.</p><a class="text-link" href="contact.html?subject=Catering%20enquiry#enquiry">Plan your spread <span aria-hidden="true">↗</span></a></article><article class="service-card reveal"><span class="service-icon" aria-hidden="true">02 / <i class="ph ph-confetti"></i></span><h3>Moments worth marking</h3><p>Birthdays, milestones or just-because gatherings. Good food and thoughtful details to make your occasion feel a little more personal.</p><a class="text-link" href="contact.html?subject=Event%20enquiry#enquiry">Make it an occasion <span aria-hidden="true">↗</span></a></article><article class="service-card reveal"><span class="service-icon" aria-hidden="true">03 / <i class="ph ph-wine"></i></span><h3>Your own little corner</h3><p>A quieter table for a closer circle. Our imagined private dining experience makes space for conversations that deserve a whole evening.</p><a class="text-link" href="contact.html?subject=Private%20dining#enquiry">Talk private dining <span aria-hidden="true">↗</span></a></article></div></div></section>
-    <section class="container invitation section reveal"><p class="eyebrow">FOUND YOUR FAVOURITE?</p><h2>We’ll save you<br><em class="serif-italic">a little warmth.</em></h2><p>Try our demo enquiry form to plan your imagined visit.</p><a class="button" href="contact.html#enquiry">Enquire about a table <span aria-hidden="true">↗</span></a></section></main>
-  <footer class="site-footer">
-    <div class="container footer-top"><div><a class="brand footer-brand" href="index.html">ember & spice<span aria-hidden="true">✳</span></a><p>Nigerian roots. An open flame.<br>A table with your name on it.</p></div><div><h2>Find your way</h2><a href="about.html">Our story</a><a href="services.html">The menu</a><a href="contact.html">Visit & enquiries</a></div><div><h2>Come hungry</h2><p>Tuesday – Sunday · 12 noon – 10 pm<br>Monday · Taking a little breather</p><p>Jos, Plateau State, Nigeria<br><span class="opening-status">Checking opening hours…</span></p></div></div>
-    <div class="container footer-bottom"><p>© <span class="current-year">2026</span> Ember & Spice · A fictional restaurant, made for COM 105.</p><p>Sample contact details, prices & guest quotes for demonstration.</p></div>
-  </footer>
-  <button class="back-top icon-button" aria-label="Back to top" type="button" hidden>↑</button>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore fire-kissed grills, smoky jollof, comforting soups and refreshing mocktails."
+    />
+    <meta name="theme-color" content="#171916" />
+    <meta property="og:title" content="The menu | Ember & Spice" />
+    <meta
+      property="og:description"
+      content="Explore fire-kissed grills, smoky jollof, comforting soups and refreshing mocktails."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/hero.webp" />
+    <title>The menu | Ember & Spice — Jos</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"
+      defer
+    ></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="nav-wrap container">
+        <a class="brand" href="index.html" aria-label="Ember and Spice home"
+          ><span class="brand-mark" aria-hidden="true">✳</span
+          ><span
+            >ember<span class="brand-amp"> & </span>spice<small
+              >JOS · MODERN NIGERIAN GRILL</small
+            ></span
+          ></a
+        >
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">Our story</a>
+          <a href="services.html" aria-current="page">The menu</a>
+          <a href="contact.html">Visit us</a>
+        </nav>
+        <div class="nav-actions">
+          <button
+            class="theme-toggle icon-button"
+            type="button"
+            aria-label="Switch to light theme"
+          >
+            <i class="ph ph-sun" aria-hidden="true"></i
+            ><span class="theme-symbol" aria-hidden="true">☼</span></button
+          ><a class="button button-small nav-book" href="contact.html#enquiry"
+            >A seat at our table <span aria-hidden="true">↗</span></a
+          ><button
+            class="menu-toggle icon-button"
+            aria-controls="main-nav"
+            aria-expanded="false"
+            type="button"
+            aria-label="Open navigation"
+          >
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section class="container page-intro">
+        <div>
+          <p class="eyebrow">THE MENU · MADE WITH INTENTION</p>
+          <h1>
+            Big flavour.<br /><em class="serif-italic">No small talk.</em>
+          </h1>
+        </div>
+        <p>
+          From the first bite to the last sip.<br />Nigerian favourites with our
+          own little spark.
+        </p>
+      </section>
+      <section
+        class="container menu-section"
+        id="menu"
+        aria-labelledby="menu-heading"
+      >
+        <div class="menu-toolbar">
+          <h2 id="menu-heading" class="visually-hidden">Our food and drinks</h2>
+          <div
+            class="menu-filters"
+            role="group"
+            aria-label="Filter menu by category"
+          >
+            <button
+              class="filter-button is-active"
+              type="button"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              All dishes <span>06</span></button
+            ><button
+              class="filter-button"
+              type="button"
+              data-filter="grills"
+              aria-pressed="false"
+            >
+              Grills & bites</button
+            ><button
+              class="filter-button"
+              type="button"
+              data-filter="rice"
+              aria-pressed="false"
+            >
+              Rice</button
+            ><button
+              class="filter-button"
+              type="button"
+              data-filter="soups"
+              aria-pressed="false"
+            >
+              Soups</button
+            ><button
+              class="filter-button"
+              type="button"
+              data-filter="drinks"
+              aria-pressed="false"
+            >
+              Drinks
+            </button>
+          </div>
+          <p id="filter-result" role="status" aria-live="polite">
+            6 dishes to discover
+          </p>
+        </div>
+        <!-- Handwritten CSS Grid; category filtering is vanilla JavaScript. -->
+        <div class="menu-grid">
+          <article class="food-card menu-card" data-category="grills">
+            <div class="image-link">
+              <img
+                src="assets/images/grill.webp"
+                alt="Chargrilled beef with rosemary, illustrative of our suya selection"
+                width="900"
+                height="600"
+                loading="lazy"
+              /><span class="image-badge">HOUSE SIGNATURE</span>
+            </div>
+            <div class="dish-title">
+              <h3>Signature beef suya</h3>
+              <span>₦6,500</span>
+            </div>
+            <p>
+              Tender grilled beef, toasted groundnut yaji, sliced onion and
+              fresh tomato. A little heat, a lot of soul.
+            </p>
+            <span class="diet-note">Groundnuts</span>
+          </article>
+          <article class="food-card menu-card" data-category="rice">
+            <div class="image-link">
+              <img
+                src="assets/images/rice.webp"
+                alt="Colourful seasoned rice, illustrative of our jollof selection"
+                width="900"
+                height="600"
+                loading="lazy"
+              /><span class="image-badge">COMFORT, DONE PROPERLY</span>
+            </div>
+            <div class="dish-title">
+              <h3>Smoky party jollof</h3>
+              <span>₦5,000</span>
+            </div>
+            <p>
+              Tomato-rich rice with a gentle smoky finish, sweet fried plantain
+              and a bright house slaw.
+            </p>
+            <span class="diet-note">Vegetarian option</span>
+          </article>
+          <article class="food-card menu-card" data-category="grills">
+            <div class="image-link">
+              <img
+                src="assets/images/chicken.webp"
+                alt="Golden glazed chicken garnished with herbs"
+                width="900"
+                height="600"
+                loading="lazy"
+              /><span class="image-badge">STRAIGHT FROM THE FIRE</span>
+            </div>
+            <div class="dish-title">
+              <h3>Pepper-glazed chicken</h3>
+              <span>₦7,500</span>
+            </div>
+            <p>
+              Flame-finished chicken with our bold pepper glaze, grilled
+              vegetables and a squeeze of lime.
+            </p>
+            <span class="diet-note">Medium heat</span>
+          </article>
+          <article class="food-card menu-card" data-category="soups">
+            <div class="image-link">
+              <img
+                src="assets/images/soup.webp"
+                alt="A hearty herb-garnished soup, illustrative of our pepper soup"
+                width="900"
+                height="600"
+                loading="lazy"
+              /><span class="image-badge">A WARM EMBRACE</span>
+            </div>
+            <div class="dish-title">
+              <h3>Jos pepper soup</h3>
+              <span>₦5,500</span>
+            </div>
+            <p>
+              A fragrant, warming broth with goat meat, aromatic Nigerian spices
+              and fresh herbs.
+            </p>
+            <span class="diet-note">Spicy</span>
+          </article>
+          <article class="food-card menu-card" data-category="grills">
+            <div class="image-link">
+              <img
+                src="assets/images/bites.webp"
+                alt="A colourful small-plate selection, illustrative of our sharing platter"
+                width="900"
+                height="600"
+                loading="lazy"
+              /><span class="image-badge">BETTER WHEN SHARED</span>
+            </div>
+            <div class="dish-title">
+              <h3>Small chops platter</h3>
+              <span>₦4,500</span>
+            </div>
+            <p>
+              A playful mix of puff-puff, spring rolls and samosas, served with
+              a lively pepper dip.
+            </p>
+            <span class="diet-note">Wheat · Vegetarian option</span>
+          </article>
+          <article class="food-card menu-card" data-category="drinks">
+            <div class="image-link">
+              <img
+                src="assets/images/drink.webp"
+                alt="A fresh citrus mocktail served in a tall glass with fruit"
+                width="900"
+                height="600"
+                loading="lazy"
+              /><span class="image-badge">A LITTLE SUNSHINE</span>
+            </div>
+            <div class="dish-title">
+              <h3>Hibiscus sunset</h3>
+              <span>₦2,500</span>
+            </div>
+            <p>
+              A chilled zobo-inspired mocktail with hibiscus, fresh citrus, a
+              touch of ginger and zero alcohol.
+            </p>
+            <span class="diet-note">Alcohol-free</span>
+          </article>
+        </div>
+        <aside class="menu-note">
+          <span aria-hidden="true">✳</span>
+          <div>
+            <h3>A little note from the kitchen</h3>
+            <p>
+              All dishes, prices and photos are illustrative. Tell us about any
+              allergies when making an enquiry; the demo form does not place an
+              order or reserve a table.
+            </p>
+          </div>
+        </aside>
+      </section>
+      <!-- ===== CATERING & EVENTS (Flexbox) ===== -->
+      <section class="services-section section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">BEYOND THE EVERYDAY</p>
+              <h2>
+                Your occasion.<br /><em class="serif-italic"
+                  >Our kind of flavour.</em
+                >
+              </h2>
+            </div>
+            <p>
+              Some moments call for a bigger table.<br />Let’s imagine something
+              special.
+            </p>
+          </div>
+          <div class="services-flex">
+            <article class="service-card reveal">
+              <span class="service-icon" aria-hidden="true"
+                >01 / <i class="ph ph-bowl-food"></i
+              ></span>
+              <h3>Catering, with soul</h3>
+              <p>
+                Bring the Ember & Spice spirit to your celebration. A considered
+                spread of grills, rice and sharing plates, made for your guest
+                list.
+              </p>
+              <a
+                class="text-link"
+                href="contact.html?subject=Catering%20enquiry#enquiry"
+                >Plan your spread <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="service-card reveal">
+              <span class="service-icon" aria-hidden="true"
+                >02 / <i class="ph ph-confetti"></i
+              ></span>
+              <h3>Moments worth marking</h3>
+              <p>
+                Birthdays, milestones or just-because gatherings. Good food and
+                thoughtful details to make your occasion feel a little more
+                personal.
+              </p>
+              <a
+                class="text-link"
+                href="contact.html?subject=Event%20enquiry#enquiry"
+                >Make it an occasion <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="service-card reveal">
+              <span class="service-icon" aria-hidden="true"
+                >03 / <i class="ph ph-wine"></i
+              ></span>
+              <h3>Your own little corner</h3>
+              <p>
+                A quieter table for a closer circle. Our imagined private dining
+                experience makes space for conversations that deserve a whole
+                evening.
+              </p>
+              <a
+                class="text-link"
+                href="contact.html?subject=Private%20dining#enquiry"
+                >Talk private dining <span aria-hidden="true">↗</span></a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="container invitation section reveal">
+        <p class="eyebrow">FOUND YOUR FAVOURITE?</p>
+        <h2>
+          We’ll save you<br /><em class="serif-italic">a little warmth.</em>
+        </h2>
+        <p>Try our demo enquiry form to plan your imagined visit.</p>
+        <a class="button" href="contact.html#enquiry"
+          >Enquire about a table <span aria-hidden="true">↗</span></a
+        >
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <div>
+          <a class="brand footer-brand" href="index.html"
+            >ember & spice<span aria-hidden="true">✳</span></a
+          >
+          <p>
+            Nigerian roots. An open flame.<br />A table with your name on it.
+          </p>
+        </div>
+        <div>
+          <h2>Find your way</h2>
+          <a href="about.html">Our story</a><a href="services.html">The menu</a
+          ><a href="contact.html">Visit & enquiries</a>
+        </div>
+        <div>
+          <h2>Come hungry</h2>
+          <p>
+            Tuesday – Sunday · 12 noon – 10 pm<br />Monday · Taking a little
+            breather
+          </p>
+          <p>
+            Jos, Plateau State, Nigeria<br /><span class="opening-status"
+              >Checking opening hours…</span
+            >
+          </p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>
+          © <span class="current-year">2026</span> Ember & Spice · A fictional
+          restaurant, made for COM 105.
+        </p>
+        <p>Sample contact details, prices & guest quotes for demonstration.</p>
+      </div>
+    </footer>
+    <button
+      class="back-top icon-button"
+      aria-label="Back to top"
+      type="button"
+      hidden
+    >
+      ↑
+    </button>
+  </body>
 </html>
