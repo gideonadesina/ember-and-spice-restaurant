@@ -163,3 +163,51 @@ function initContactForm() {
   updateCharacterCount();
 }
 initContactForm();
+
+/* ===== OPTIONAL LIBRARIES: layout and core logic remain handwritten ===== */
+function initTestimonials() {
+  const slider = document.querySelector('.testimonial-slider');
+  if (!slider) return;
+  const counter = document.querySelector('.quote-count');
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (typeof Swiper !== 'undefined') {
+    new Swiper(slider, {
+      loop: true, speed: reduced ? 0 : 450, slidesPerView: 1, spaceBetween: 40,
+      navigation: { nextEl: '.quote-next', prevEl: '.quote-prev' },
+      a11y: { enabled: true },
+      on: { slideChange: function () { counter.textContent = (this.realIndex + 1) + ' / 3'; } }
+    });
+  } else {
+    // Keep quote controls useful if a CDN is temporarily unavailable.
+    const slides = Array.from(slider.querySelectorAll('.swiper-slide'));
+    let current = 0;
+    function showQuote(direction) {
+      current = (current + direction + slides.length) % slides.length;
+      slides.forEach(function (slide, index) { slide.hidden = index !== current; slide.style.display = index === current ? 'block' : 'none'; });
+      counter.textContent = (current + 1) + ' / ' + slides.length;
+    }
+    document.querySelector('.quote-next').addEventListener('click', function () { showQuote(1); });
+    document.querySelector('.quote-prev').addEventListener('click', function () { showQuote(-1); });
+    showQuote(0);
+  }
+}
+
+function initMotion() {
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduced) return;
+  if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from('.hero-copy > *', { y: 20, opacity: 0, duration: .8, stagger: .12, ease: 'power2.out', clearProps: 'all' });
+    document.querySelectorAll('.reveal').forEach(function (element) {
+      gsap.from(element, { y: 20, opacity: 0, duration: .6, ease: 'power2.out', clearProps: 'all', scrollTrigger: { trigger: element, start: 'top 96%', once: true } });
+    });
+  }
+  if (typeof Lenis !== 'undefined' && window.matchMedia('(pointer: fine)').matches) {
+    const lenis = new Lenis({ duration: .8, smoothWheel: true, anchors: true });
+    // One lightweight animation loop; Lenis is skipped on touch devices.
+    function animateScroll(time) { lenis.raf(time); requestAnimationFrame(animateScroll); }
+    requestAnimationFrame(animateScroll);
+  }
+}
+initTestimonials();
+initMotion();
