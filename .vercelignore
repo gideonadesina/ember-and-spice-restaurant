@@ -1,0 +1,6 @@
+.git
+.tools
+.vercel
+node_modules
+qa
+*.log

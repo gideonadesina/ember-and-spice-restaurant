@@ -71,7 +71,7 @@ function initTheme() {
   });
 }
 
-/* ===== OPENING STATUS: always calculated in Jos time ===== */
+/* ===== OPENING STATUS: always calculated in West Africa Time ===== */
 function updateOpeningStatus() {
   const parts = new Intl.DateTimeFormat("en-GB", {
     timeZone: "Africa/Lagos",
