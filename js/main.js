@@ -102,3 +102,64 @@ initBackToTop();
 updateOpeningStatus();
 setInterval(updateOpeningStatus, 60000);
 document.querySelectorAll('.current-year').forEach(function (element) { element.textContent = new Date().getFullYear(); });
+
+/* ===== CONTACT FORM: validation only; no network request or stored message ===== */
+function initContactForm() {
+  const form = document.getElementById('contact-form');
+  if (!form) return;
+  const fields = Array.from(form.querySelectorAll('input, textarea'));
+  const success = document.getElementById('form-success');
+  const message = document.getElementById('message');
+  const counter = document.getElementById('message-count');
+  const subject = new URLSearchParams(window.location.search).get('subject');
+  if (subject) document.getElementById('subject').value = subject.slice(0, 120);
+
+  function validateField(field) {
+    const value = field.value.trim();
+    let error = '';
+    if (!value) error = 'Please enter your ' + ({ name: 'full name', email: 'email address', subject: 'subject', message: 'message' }[field.name]) + '.';
+    else if (field.name === 'name' && value.length < 2) error = 'Your name needs at least 2 characters.';
+    else if (field.name === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) error = 'Please enter a valid email address, such as you@example.com.';
+    else if (field.name === 'subject' && value.length < 3) error = 'Please use at least 3 characters for the subject.';
+    else if (field.name === 'message' && value.length < 10) error = 'Please write at least 10 characters in your message.';
+    else if (value.length > field.maxLength) error = 'Please shorten this field to ' + field.maxLength + ' characters.';
+    document.getElementById(field.id + '-error').textContent = error;
+    field.setAttribute('aria-invalid', String(Boolean(error)));
+    return !error;
+  }
+
+  function updateCharacterCount() {
+    counter.textContent = message.value.length.toLocaleString('en-GB') + ' / 1,000 characters';
+  }
+  fields.forEach(function (field) {
+    field.addEventListener('blur', function () { validateField(field); });
+    field.addEventListener('input', function () {
+      success.hidden = true;
+      if (field.hasAttribute('aria-invalid')) validateField(field);
+    });
+  });
+  message.addEventListener('input', updateCharacterCount);
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    success.hidden = true;
+    // Validate every field, even if an earlier one is invalid.
+    const results = fields.map(validateField);
+    if (results.some(function (valid) { return !valid; })) {
+      fields.find(function (field) { return field.getAttribute('aria-invalid') === 'true'; }).focus();
+      return;
+    }
+    const fullName = document.getElementById('name').value.trim();
+    // textContent ensures names are treated as text, never executable HTML.
+    success.textContent = 'Thanks, ' + fullName + '! Your message passed validation. (Demo site: no message was actually sent.) No table has been reserved.';
+    form.reset();
+    fields.forEach(function (field) {
+      field.removeAttribute('aria-invalid');
+      document.getElementById(field.id + '-error').textContent = '';
+    });
+    updateCharacterCount();
+    success.hidden = false;
+    success.focus();
+  });
+  updateCharacterCount();
+}
+initContactForm();
